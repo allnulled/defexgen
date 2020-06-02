@@ -1,0 +1,37 @@
+{
+  "name": "defexgen",
+  "version": "0.0.1",
+  "description": "DEFinitions EXam GENerator: programming language to easily create test-based exams from a set of definitions.",
+  "main": "index.js",
+  "bin": {
+    "defexgen": "./defexgen.bin.js"
+  },
+  "scripts": {
+    "build": "pegjs --format umd --export-var Defexgen defexgen.pegjs",
+    "test": "node test/index.test.js",
+    "test:bin": "defexgen test/botanica.txt --output test/botanica.examen.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/defexgen.git"
+  },
+  "keywords": [
+    "definition",
+    "exam",
+    "generator",
+    "html",
+    "form"
+  ],
+  "author": "allnulled",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/allnulled/defexgen/issues"
+  },
+  "homepage": "https://github.com/allnulled/defexgen#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "yargs": "^15.3.1"
+  }
+}
