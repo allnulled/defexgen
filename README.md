@@ -50,14 +50,14 @@ When you open this file with your browser, you will get the exam.
 ### API usage
 
 ```js
-const htmlPage = require("defexgen").parse(`Name:
-	Definition of the name.
+const htmlPage = require("defexgen").parse(`Name 1:
+	Definition of the name 1.
 
-Name:
-	Definition of the name.
+Name 2:
+	Definition of the name 2.
 
-Name:
-	Definition of the name.
+Name 3:
+	Definition of the name 3.
 `);
 ```
 
